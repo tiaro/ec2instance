@@ -1,0 +1,29 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = false
+max_line_length = 120
+tab_width = 4
+
+[{*.yaml,*.yml}]
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.sh]
+indent_style = tab
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Markdown Files
+[*.md]
+insert_final_newline = true
+trim_trailing_whitespace = false
+
+# The JSON files contain newlines inconsistently
+[*.json]
+indent_size = 2
